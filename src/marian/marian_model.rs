@@ -146,6 +146,11 @@ impl MarianModelResources {
         "marian-mt-en-he/model",
         "https://huggingface.co/Helsinki-NLP/opus-mt-en-he/resolve/main/rust_model.ot",
     );
+    // Shared under cc-by-sa-4.0
+    pub const ENGLISH2JAPANESE: (&'static str, &'static str) = (
+        "marian-fugumt-en-ja/model",
+        "https://object-storage.tyo1.conoha.io/v1/nc_b22de95e3cf1434da07499038766e2b7/lycoris/fugumt-en-ja/rust_model.ot",
+    );
 }
 
 impl MarianConfigResources {
@@ -248,6 +253,11 @@ impl MarianConfigResources {
     pub const ENGLISH2HEBREW: (&'static str, &'static str) = (
         "marian-mt-en-he/config",
         "https://huggingface.co/Helsinki-NLP/opus-mt-en-he/resolve/main/config.json",
+    );
+    /// Shared under cc-by-sa-4.0
+    pub const ENGLISH2JAPANESE: (&'static str, &'static str) = (
+        "marian-fugumt-en-ja/config",
+        "https://object-storage.tyo1.conoha.io/v1/nc_b22de95e3cf1434da07499038766e2b7/lycoris/fugumt-en-ja/config.json",
     );
 }
 
@@ -352,6 +362,11 @@ impl MarianVocabResources {
         "marian-mt-en-he/vocab",
         "https://huggingface.co/Helsinki-NLP/opus-mt-en-he/resolve/main/vocab.json",
     );
+    /// Shared under cc-by-sa-4.0
+    pub const ENGLISH2JAPANESE: (&'static str, &'static str) = (
+        "marian-fugumt-en-ja/vocab",
+        "https://object-storage.tyo1.conoha.io/v1/nc_b22de95e3cf1434da07499038766e2b7/lycoris/fugumt-en-ja/vocab.json",
+    );
 }
 
 impl MarianSpmResources {
@@ -455,6 +470,11 @@ impl MarianSpmResources {
         "marian-mt-en-he/spiece",
         "https://huggingface.co/Helsinki-NLP/opus-mt-en-he/resolve/main/source.spm",
     );
+    /// Shared under cc-by-sa-4.0
+    pub const ENGLISH2JAPANESE: (&'static str, &'static str) = (
+        "marian-fugumt-en-ja/spiece",
+        "https://object-storage.tyo1.conoha.io/v1/nc_b22de95e3cf1434da07499038766e2b7/lycoris/fugumt-en-ja/source.spm",
+    );
 }
 
 impl MarianSourceLanguages {
@@ -467,6 +487,7 @@ impl MarianSourceLanguages {
     pub const ENGLISH2ARABIC: [Language; 1] = [Language::English];
     pub const ENGLISH2HINDI: [Language; 1] = [Language::English];
     pub const ENGLISH2HEBREW: [Language; 1] = [Language::English];
+    pub const ENGLISH2JAPANESE: [Language; 1] = [Language::English];
     pub const ROMANCE2ENGLISH: [Language; 7] = [
         Language::French,
         Language::Spanish,
@@ -506,6 +527,7 @@ impl MarianTargetLanguages {
     pub const ENGLISH2ARABIC: [Language; 1] = [Language::Arabic];
     pub const ENGLISH2HINDI: [Language; 1] = [Language::Hindi];
     pub const ENGLISH2HEBREW: [Language; 1] = [Language::Hebrew];
+    pub const ENGLISH2JAPANESE: [Language; 1] = [Language::Japanese];
     pub const ROMANCE2ENGLISH: [Language; 1] = [Language::English];
     pub const GERMAN2ENGLISH: [Language; 1] = [Language::English];
     pub const RUSSIAN2ENGLISH: [Language; 1] = [Language::English];
